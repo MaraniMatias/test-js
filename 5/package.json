@@ -4,6 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
+    "test": "npx jest",
     "lint": "eslint . --ignore-path .gitignore",
     "build:es5": "webpack --config webpack.es5.js",
     "build:es6": "webpack --config webpack.es6.js",
@@ -18,12 +19,15 @@
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.12.1",
+    "babel-jest": "^26.6.3",
     "babel-loader": "^8.0.6",
+    "chai": "^4.2.0",
     "eslint": "^7.13.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-loader": "^3.0.3",
     "eslint-plugin-import": "^2.22.1",
+    "jest": "^26.6.3",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0",
