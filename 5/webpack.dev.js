@@ -1,32 +1,15 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 const merge = require("webpack-merge");
 const common = require("./webpack.common.js");
 
 module.exports = merge(common, {
   mode: "development",
-  output: {
-    filename: "sunmedia-es6.js",
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: ["babel-loader", "eslint-loader"],
-      },
-    ],
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      filename: "index.html",
-      template: "./public/index.html",
-    }),
-  ],
   devServer: {
     port: "8080",
     host: "0.0.0.0",
-    contentBase: path.join(__dirname, "./public"),
+    contentBase: path.join(__dirname, "."),
+    openPage: "/public",
+    hot: true,
     compress: true,
     noInfo: true,
   },
