@@ -1,4 +1,4 @@
-let xhttp = new XMLHttpRequest();
+const xhttp = new XMLHttpRequest();
 import EventManagerFactory from "./EventManagerFactory";
 
 let onReadyStateChange = function(onSuccess) {
