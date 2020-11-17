@@ -27,3 +27,19 @@ resuelve el problema.
     > 4
 ```
 
+_Respuesta:_
+
+- Con ES6 remplazo _var_ por _let_
+- Con ES Clásico
+
+```javascript
+var print = function (i) {
+  setTimeout(function () {
+    console.log(i);
+  }, 1000);
+};
+for (var i = 0; i < 5; i++) {
+  print(i);
+}
+```
+
