@@ -19,7 +19,7 @@ function createVideoElement(src) {
   videoHtmlElement.innerText = altText;
   videoHtmlElement.muted = true;
   videoHtmlElement.autoplay = true;
-  videoHtmlElement.controls = true;
+  // videoHtmlElement.controls = true;
   videoHtmlElement.appendChild(source);
   return videoHtmlElement;
 }
@@ -30,6 +30,10 @@ function createVideoElement(src) {
  */
 function onInsertVideoWhenTargetIsVisible(targetElm, videoElm) {
   targetElm.appendChild(videoElm);
+  // Wait for video to finish
+  videoElm.onwaiting = () => {
+    targetElm.removeChild(videoElm);
+  };
 }
 
 onInsertVideoWhenTargetIsVisible(target, videoElm);
