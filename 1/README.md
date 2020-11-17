@@ -19,6 +19,12 @@ y responder a las siguientes cuestiones.
    iniciales y `colors` tenga los valores de ambas al finalizar la ejecución del
    script.
 
+**Respuesta:**
+
+```javascript
+var colors = Object.assign({}, rgb, wb);
+```
+
 3. Además, tenemos un bug localizado en dispositivos con Internet Explorer…
    El código de nuestro script no funciona y necesitamos que se ejecute también
    en este navegador. ¿Sabrías identificar cuál es el problema? ¿Qué solución nos
