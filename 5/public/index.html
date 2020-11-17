@@ -351,9 +351,21 @@
     </section>
     <!-- Import library here -->
     <script>
+      // See: https://stackoverflow.com/questions/29046635/javascript-es6-cross-browser-detection
+      function getESVersion() {
+        "use strict";
+        try {
+          eval("const foo = (x)=>x+1");
+        } catch (e) {
+          return 5;
+        }
+        return 6;
+      }
+
       var libes6 = document.createElement("script");
       libes6.async = true;
-      libes6.src = "../dist/sunmedia-es6.js";
+      var ESVersion = getESVersion() === 6 ? "es6" : "es5";
+      libes6.src = "../dist/sunmedia-" + ESVersion + ".js";
       document.body.appendChild(libes6);
     </script>
     <!-- ./Import -->
