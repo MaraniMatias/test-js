@@ -1,21 +1,21 @@
-const path = require("path");
-const merge = require("webpack-merge");
-const common = require("./webpack.common.js");
+const path = require('path');
+const merge = require("webpack-merge"); // eslint-disable-line
+const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
-  mode: "development",
+  mode: 'development',
   devServer: {
-    port: "8080",
-    host: "0.0.0.0",
-    contentBase: path.join(__dirname, "."),
-    openPage: "/public",
+    port: '8080',
+    host: '0.0.0.0',
+    contentBase: path.join(__dirname, '.'),
+    openPage: '/public',
     hot: true,
     compress: true,
     noInfo: true,
   },
   performance: {
-    hints: "warning",
+    hints: 'warning',
   },
-  devtool: "eval-source-map",
+  devtool: 'eval-source-map',
   // devtool: "source-map",
 });
