@@ -1,6 +1,7 @@
 # Test 5
 
-Para simplificar la prueba a realizar hemos creado un proyecto base con toda la configuración y dependencias necesarias para la realización de la misma. 
+Para simplificar la prueba a realizar hemos creado un proyecto base con toda la configuración
+y dependencias necesarias para la realización de la misma.
 A continuación, explicamos qué es lo que pedimos.
 
 ## Cómo realizar la prueba
@@ -11,7 +12,7 @@ A continuación, explicamos qué es lo que pedimos.
    Dado un contenedor, un HTMLElement que se encuentra a lo largo de una página web y que ya viene especificado en el fichero anteriomente mencionado, será necesario:
 
    a. Insertar un **HTMLVideoElement** `<video>` dentro de dicho contenedor cuando este sea visible en el **viewport**.
-   b. El vídeo debe reproducirse de manera automática inmediatamente después de ser insertado. 
+   b. El vídeo debe reproducirse de manera automática inmediatamente después de ser insertado.
    c. Una vez el vídeo haya finalizado su reproducción, tendremos que eliminar el **HTMLVideoElement** del contenedor en el que se encuentra.
 
    Es necesario, que el código realizado en este ejercicio sea propio y no se utilicen librerías de terceros.
@@ -20,16 +21,15 @@ A continuación, explicamos qué es lo que pedimos.
    Damos libertad a la hora de elegir las dependencias que se utilicen para conseguir este propósito.
 
 3. En el fichero `public/index.html` se importa el código generado compatible para **ECMAScript6** sin tener encuenta navegadores antiguos que no son capaces de interpretar
-   correctamente este código. 
+   correctamente este código.
    Queremos cambiar esto para que se utilice el que mejor convenga según el navegador.
    Es decir, si el navegador acepta código ES6 se debe utilizar nuestra versión para **ECMAScript6** (sunmedia-es6.js).
    En caso contrario, debemos utilizar la versión compilada para **ECMAScript5** (sunmedia-es5.js) que hemos conseguido realizar
-   gracias al ejercicio 2. 
+   gracias al ejercicio 2.
 
 **Qué valoramos**:
 
 - Que el código realizado esté cubierto por test unitarios.
-
 
 **Estructura de la prueba**:
 
@@ -54,19 +54,19 @@ sdk-test-js/
 
 **Comandos disponibles**:
 
-*ESLint* para identificar patrones problemáticos encontrados en el código JavaScript.
+_ESLint_ para identificar patrones problemáticos encontrados en el código JavaScript.
 
 ```
 npm run lint
 ```
 
-*WebpackDevServer* para desarrollar y probar los cambios con mayor agilidad.
+_WebpackDevServer_ para desarrollar y probar los cambios con mayor agilidad.
 
 ```
 npm run server:start
 ```
 
-*Webpack* para crear el directorio `dist` con la versión de producción del código JS desarrollado.  
+_Webpack_ para crear el directorio `dist` con la versión de producción del código JS desarrollado.
 
 ```
 npm run build:es5
@@ -75,5 +75,5 @@ npm run build:es6
 
 ## Cómo entregar la prueba
 
-Para la entrega de la prueba realizada, será necesario que el código se suba a un repositorio con acceso público. 
-Animamos al envío de la misma ya que valoraremos la prueba con independencia de si hay algún ejercicio no completado. 
+Para la entrega de la prueba realizada, será necesario que el código se suba a un repositorio con acceso público.
+Animamos al envío de la misma ya que valoraremos la prueba con independencia de si hay algún ejercicio no completado.
