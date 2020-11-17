@@ -18,7 +18,7 @@ function createVideoElement(src) {
   videoHtmlElement.innerText = altText;
   videoHtmlElement.muted = true;
   videoHtmlElement.autoplay = true;
-  videoHtmlElement.controls = true;
+  //  videoHtmlElement.controls = true;
   videoHtmlElement.appendChild(source);
   return videoHtmlElement;
 }
