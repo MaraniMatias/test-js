@@ -31,3 +31,11 @@ var colors = Object.assign({}, rgb, wb);
    propones?
 
 **PS**: No es estrictamente necesario tener Internet Explorer para poder identificar y/o resolver el bug.
+
+**Respuesta:**
+
+Como muestra MDN en [este link](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign),
+_Object.assing_ no es compatible con IE, la solución que puede analizar es usar
+_Polyfill_, usar _Babel_, _Typescript_ indicando que transcriba el código para
+que sea compatible con IE, la otra opción hacer un for para extraer las
+propiedades del objeto y agregarselas a la variable deseada.
