@@ -46,3 +46,8 @@ Para empezar a desarrollar tendremos que instalar algunas librerías que están 
 Posteriormente, con el objetivo de compilar el código y que esta tarea se ejecute con cada cambio sobre los archivos, tendremos que ejecutar el siguiente comando:
 
 * `webpack --watch`
+
+**Comentario**
+
+El enunciado me genero dudas, así que si desean detallen un poco más
+detallado que pide el ejercicio y con gusto mejorare el código entregado
