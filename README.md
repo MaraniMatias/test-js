@@ -1,3 +1,7 @@
+**EN LOS README DE CADA TEST AGREGUE LAS RESPUESTAS Y ALGUNOS COMENTARIOS**
+
+---
+
 # SunMedia JS Tests
 
 Este es el repositorio para la prueba técnica de Javascript de SunMedia.
@@ -23,5 +27,3 @@ qué es lo que se pide, así como el código asociado a la prueba.
 
 La prueba puede subirse a algún repositorio público al que podamos tener
 acceso desde el equipo de desarrollo de SunMedia.
-
-**EN LOS README DE CADA TEST AGREGUE LAS RESPUESTAS Y ALGUNOS COMENTARIOS**
