@@ -36,5 +36,14 @@ describe('Unit test: onInsertVideoWhenTargetIsVisible', () => {
     });
   });
 
-  it.skip('Remove video element after video has be finished', () => {});
+  it('Remove video element after video has be finished', () => {
+    const target = document.createElement('div');
+    const videoElm = createVideoElement(src);
+    onInsertVideoWhenTargetIsVisible(target, videoElm);
+    videoElm.addEventListener('ended', () => {
+      const child = target.firstElementChild;
+      console.log(child);
+      should.exist(child);
+    });
+  });
 });
