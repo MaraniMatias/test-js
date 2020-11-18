@@ -77,3 +77,15 @@ npm run build:es6
 
 Para la entrega de la prueba realizada, será necesario que el código se suba a un repositorio con acceso público.
 Animamos al envío de la misma ya que valoraremos la prueba con independencia de si hay algún ejercicio no completado.
+
+**Comentario**
+
+En esta prueba faltaban fichero como ser, _.eslintrc_, _.gitignore_ y
+_webpack.dev.js_, no se si era parte de la prueba pero los cree para poder corre
+el código.
+
+Nunca use el elemento video de html, me llevo tiempo descubrir que la
+reproducción automática inicia solo si la propiedad muted esta en true
+
+Los test se pueden correr con _npm run test_, hace mucho que no hago test
+unitarios de javascript puro para browser, suelo hacer apara node.
