@@ -1,8 +1,8 @@
-/// <reference path="./Event.js" />
+/// <reference path="Event.js" />
 
 export default class EventManager {
   /**
-   *  @param {Array.< new ()Event>} events Events list
+   *  @param {MyEvent[]} events Events list
    */
   constructor(events) {
     this.events = events;

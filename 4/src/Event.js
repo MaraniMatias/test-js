@@ -1,8 +1,14 @@
 /**
+ * @typedef {Object} MyEvent
+ * @property {string} message Event message
+ * @property {string} type Event type
+ * @property {number} second Event second
+ */
+
+/**
  * Simple event class implement
  * @class Event
  */
-
 export default class Event {
   /**
    * constructor description
