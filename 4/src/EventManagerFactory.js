@@ -7,24 +7,14 @@ export default class EventManagerFactory {
    *  @param {String[]} types Event type to show
    */
   static create(events, types) {
-    // console.log(events, types);
-
     const validEventTypes = new Set(types);
     const validEvents = events
       .filter((event) => validEventTypes.has(event.type))
-      .map((ev) => new Event(ev.message, ev.type, ev.second));
-
-    // events.forEach((event) => {
-    //   if (typeEventValid.has(event.type)) {
-    //     const ev = new Event(event.message, event.type);
-    //     console.log(`> At second ${event.second}:`, ev);
-    //     console.log(`> At second ${event.second}: ${JSON.stringify(ev)}`);
-    //   } else {
-    //     console.info("Skip event type:", event.type);
-    //   }
-    // });
+      .map((ev) => ({
+        second: ev.second,
+        event: new Event(ev.message, ev.type),
+      }));
 
     return new EventManager(validEvents);
   }
 }
-
