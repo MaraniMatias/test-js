@@ -7,9 +7,8 @@ export default class EventManagerFactory {
    *  @param {String[]} types Event type to show
    */
   static create(events, types) {
-    const validEventTypes = new Set(types);
     const validEvents = events
-      .filter((event) => validEventTypes.has(event.type))
+      .filter((event) => types.includes(event.type))
       .map((ev) => ({
         second: ev.second,
         event: new Event(ev.message, ev.type),
