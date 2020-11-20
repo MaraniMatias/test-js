@@ -2,7 +2,7 @@
 
 export default class EventManager {
   /**
-   *  @param {MyEvent[]} events Events list
+   *  @param {Array<{second:string,event:MyEvent}>} events Events list
    */
   constructor(events) {
     this.events = events;
@@ -11,9 +11,8 @@ export default class EventManager {
   run() {
     // implement your code here...
     console.log("RUNNING");
-    this.events.forEach((ev) => {
-      console.log(`> At second ${ev.second}:`, ev);
-      console.log(`> At second ${ev.second}: ${JSON.stringify(ev)}`);
+    this.events.forEach(({ second, event }) => {
+      console.log(`> At second ${second}: ${JSON.stringify(event)}`);
     });
   }
 }
